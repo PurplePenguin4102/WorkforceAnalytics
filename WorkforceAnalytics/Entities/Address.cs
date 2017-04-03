@@ -7,7 +7,9 @@ namespace Entities
 {
     public class Address
     {
+        // combined Key
         public int Id { get; set; }
+        public AddressType Type { get; set; }
         // FK
         public int WorkerId { get; set; }
         // properties
