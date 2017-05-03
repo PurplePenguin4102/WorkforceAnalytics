@@ -18,7 +18,7 @@ namespace Entities
         public string POBox { get; set; } // not allowed for home address
         public string StreetName { get; set; }
         public string Suburb { get; set; }
-        public State State { get; set; }
+        public State State { get; set; } 
         public string PostCode { get; set; }
     }
 }
