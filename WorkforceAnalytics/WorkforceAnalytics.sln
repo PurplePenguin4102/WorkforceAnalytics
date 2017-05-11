@@ -1,11 +1,13 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-VisualStudioVersion = 15.0.26228.10
+VisualStudioVersion = 15.0.26403.7
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DataModel", "DataModel\DataModel.csproj", "{74BF4294-3FAB-45B3-B011-BBC9B2DDD5F6}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Entities", "Entities\Entities.csproj", "{C33EF3AE-43D4-489B-A893-AF348313E3D0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RepositoryTests", "RepositoryTests\RepositoryTests.csproj", "{5EB06D5B-A86D-4E39-A2EA-F3AB20EF033A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{C33EF3AE-43D4-489B-A893-AF348313E3D0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C33EF3AE-43D4-489B-A893-AF348313E3D0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C33EF3AE-43D4-489B-A893-AF348313E3D0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5EB06D5B-A86D-4E39-A2EA-F3AB20EF033A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5EB06D5B-A86D-4E39-A2EA-F3AB20EF033A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5EB06D5B-A86D-4E39-A2EA-F3AB20EF033A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5EB06D5B-A86D-4E39-A2EA-F3AB20EF033A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
