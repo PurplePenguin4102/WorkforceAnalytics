@@ -14,7 +14,7 @@ namespace DataModel.Repository
             _workforceContext = new WorkforceContext();
         }
 
-        public Worker GetWorkerById()
+        public Worker GetWorkerById(int id)
         {
             return null;
         }

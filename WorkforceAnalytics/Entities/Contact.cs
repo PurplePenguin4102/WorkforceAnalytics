@@ -6,15 +6,15 @@ namespace Entities
 {
     public class Contact
     {
-        int Id { get; set; }
+        public int Id { get; set; }
         // FK
-        int WorkerId { get; set; }
+        public int WorkerId { get; set; }
         // properties
-        string PhoneAreaCode { get; set; }
-        string PhoneNumber { get; set; }
-        string FaxAreaCode { get; set; }
-        string FaxNumber { get; set; }
-        string Email { get; set; }
-        string Mobile { get; set; }
+        public string PhoneAreaCode { get; set; }
+        public string PhoneNumber { get; set; }
+        public string FaxAreaCode { get; set; }
+        public string FaxNumber { get; set; }
+        public string Email { get; set; }
+        public string Mobile { get; set; }
     }
 }
