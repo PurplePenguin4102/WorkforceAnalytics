@@ -48,6 +48,12 @@ namespace DataModel.Repository
                 .ToDictionary(a => a.key, a => a.val); 
         }
 
+        public List<Contact> GetContactDetailsOfWorkersInPostCode(string PostCode)
+        {
+            return (from worker in _workforceContext.Workers
+                    where worker.HomeAddress.PostCode == PostCode
+                    select worker.ContactDetails).ToList();
+        }
 
     }
 }
