@@ -15,8 +15,8 @@ namespace Entities
         public DateTime SignupDate { get; set; }
         
         // navigation properties
-        public Contact ContactDetails;
-        public Address HomeAddress;
-        public Address PostalAddress;
+        public Contact ContactDetails { get; set; }
+        public Address HomeAddress { get; set; }
+        public Address PostalAddress { get; set; }
     }
 }
