@@ -1,4 +1,5 @@
 ﻿using Entities;
+using System.Linq;
 using System;
 using System.Collections.Generic;
 using System.Text;
@@ -16,7 +17,7 @@ namespace DataModel.Repository
 
         public Worker GetWorkerById(int id)
         {
-            return null;
+            return (Worker)_workforceContext.Find(typeof(Worker), id);
         }
     }
 }
