@@ -30,5 +30,24 @@ namespace DataModel.Repository
         {
             return _workforceContext.Contacts.Find(id);
         }
+
+        public List<Worker> GetAllWorkersAtAddress(Address addr)
+        {
+            return _workforceContext.Workers.Where(wo => wo.HomeAddress == addr).ToList();
+        }
+
+        public Dictionary<Address, List<Worker>> GetAllWorkersGroupedByAddress()
+        {
+            return _workforceContext.Workers
+                .GroupBy(wo => wo.HomeAddress)
+                .Select(grp => new
+                {
+                    key = grp.Key,
+                    val = grp.ToList()
+                })
+                .ToDictionary(a => a.key, a => a.val); 
+        }
+
+
     }
 }
