@@ -5,9 +5,9 @@ namespace DataModel
 {
     public class WorkforceContext : DbContext
     {
-        DbSet<Worker> Workers { get; set; }
-        DbSet<Address> Addresses { get; set; }
-        DbSet<Contact> Contacts { get; set; }
+        public DbSet<Worker> Workers { get; set; }
+        public DbSet<Address> Addresses { get; set; }
+        public DbSet<Contact> Contacts { get; set; }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
